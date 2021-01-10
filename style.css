@@ -5,13 +5,16 @@
     box-sizing: border-box;
     color: orange;
 }
+.hide {
+    display: none;
+}
 
 html {
     text-align: center;
     /* background-color: rgb(17, 17, 17); */
     background-image: url("./images/czarne.jpg");
     background-attachment: fixed;
-    background-size:cover;
+    background-size: cover;
     scroll-behavior: smooth;
     font-family: cabin, sans-serif;
 }
@@ -26,8 +29,8 @@ html {
 nav {
     width: 100%;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.055);
     display: flex;
+    background-color: rgba(255, 255, 255, 0.055);
     justify-content: space-between;
     align-items: center;
     /* border-bottom: rgb(255, 166, 0) 5px solid; */
@@ -93,7 +96,6 @@ nav {
         justify-content: start;
         height: 100%;
         background-color: transparent;
-
     }
 
     a {
@@ -101,12 +103,12 @@ nav {
         text-transform: uppercase;
         text-decoration: none;
         letter-spacing: 0.15em;
-        
+
         display: inline-block;
         padding: 15px 20px;
         position: relative;
-      }
-      a:after {    
+    }
+    a:after {
         background: none repeat scroll 0 0 transparent;
         bottom: 0;
         content: "";
@@ -117,14 +119,85 @@ nav {
         background: rgb(255, 196, 0);
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
-      }
-      a:hover:after { 
-        width: 100%; 
-        left: 0; 
-      }
+    }
+    a:hover:after {
+        width: 100%;
+        left: 0;
+    }
     .closeMenu,
     .openMenu,
     .icons i {
         display: none;
     }
+}
+
+/* KONIEC NAV */
+
+header {
+    padding-top: 15vh;
+}
+.slider {
+    background-image: url("./images/mobile_slide1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    z-index: -1;
+}
+.wrapper-slide {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.wrapper-slide h2 {
+    color: rgb(255, 255, 255);
+    margin-right: 1rem;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+.wrapper-slide p {
+    display: block;
+    font-size: 1rem;
+    margin-left: 100px;
+    color: white;
+}
+.test {
+    position: relative;
+    z-index: -1;
+}
+.oferta {
+    position: relative;
+    margin: 20px 0;
+    z-index: -1;
+    font-size: 1.5rem;
+    color: white;
+}
+.smartfon{
+    background-image: url("./images/id1.jpg");
+}
+.laptop{
+    background-image: url("./images/laptop.jpg");
+}
+.id1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 80%;
+    z-index: -1;
+    margin: 0 auto 10px auto;
+    border: 3px solid white;
+}
+.id1 p {
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding-right: 20px;
+    z-index: -1;
 }

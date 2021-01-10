@@ -1,36 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">   
-    <link
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+            rel="stylesheet"
+        />
+        <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
             integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
             crossorigin="anonymous"
         />
-    <title>Tup-Tuś - Elektronika</title>
-</head>
-<body>
-<nav id="nav"> 
-    <div class="logo"><img src="./images/tuptus-brak.png" alt=""></div>
-    <div class="openMenu"><i class="fa fa-bars"></i></div>
-    <ul class="mainMenu">
-        <li id='target1' class='target'><a href="#nav" >Strona Główna</a></li>
-        <li><a href="#1" class="o_nas">O Nas</a></li>
-        <li><a href="#2" class="galeria">Oferta</a></li>
-        <li><a href="#3" class="kontakt">Kontakt</a></li>
-        <div class="closeMenu"><i class="fa fa-times"></i></div>
-        <span class="icons">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-instagram"></i>
-        </span>
-    </ul>
-</nav>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <title>Tup-Tuś - Elektronika</title>
+    </head>
+    <body>
+        <nav id="nav">
+            <div class="logo">
+                <img src="./images/tuptus-brak.png" alt="" />
+            </div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li id="target1" class="target">
+                    <a href="#nav">Strona Główna</a>
+                </li>
+                <li><a href="#1" class="o_nas">O Nas</a></li>
+                <li><a href="#2" class="galeria">Oferta</a></li>
+                <li><a href="#3" class="kontakt">Kontakt</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                </span>
+            </ul>
+        </nav>
+        <header>
+            <section class="slider">
+                <div class="wrapper-slide">
+                    <h2>f.h.u. Tup-Tuś</h2>
+                    <p class="hide">Najlepsza elektronika w niskich cenach.</p>
+                </div>
+                
+            </section>
+        </header>
+       <div class="test"><h1 class="oferta " data-aos="fade-down">Oferujemy:</h1></div> 
+        <article class="id1 smartfon" data-aos="fade-right">
+            <p class="p1" >Smartfony</p>
+        </article>
+        <article class="laptop id1" data-aos="flip-left">
+            <p class="p1" data-aos="fade-up">Laptopy</p>
+        </article>
+        <article class="laptop id1" data-aos="flip-left">
+            <p class="p1" data-aos="fade-up">Laptopy</p>
+        </article>
+        <article class="laptop id1" data-aos="flip-left">
+            <p class="p1" data-aos="fade-up">Laptopy</p>
+        </article>
+        <article class="laptop id1" data-aos="flip-left">
+            <p class="p1" data-aos="fade-up">Laptopy</p>
+        </article>
 
-    <script src="main.js"></script>
-</body>
+        <script src="main.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init({
+            duration: 1200,
+          })</script>
+    </body>
 </html>
