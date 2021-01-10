@@ -5,18 +5,28 @@
     box-sizing: border-box;
     color: orange;
 }
+.darker {
+    background-color: rgba(0, 0, 0, 0.616);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .hide {
     display: none;
 }
-
 html {
     text-align: center;
-    /* background-color: rgb(17, 17, 17); */
     background-image: url("./images/czarne.jpg");
     background-attachment: fixed;
     background-size: cover;
     scroll-behavior: smooth;
     font-family: cabin, sans-serif;
+}
+body{
+
 }
 .logo img {
     position: relative;
@@ -30,7 +40,7 @@ nav {
     width: 100%;
     position: fixed;
     display: flex;
-    background-color: rgba(255, 255, 255, 0.055);
+    background-color: rgba(255, 255, 255, 0.034);
     justify-content: space-between;
     align-items: center;
     /* border-bottom: rgb(255, 166, 0) 5px solid; */
@@ -174,17 +184,20 @@ header {
     font-size: 1.5rem;
     color: white;
 }
-.smartfon{
+.smartfon {
     background-image: url("./images/id1.jpg");
 }
-.laptop{
+.laptop {
     background-image: url("./images/laptop.jpg");
+}
+.case {
+    background-image: url("./images/case.jpg");
 }
 .id1 {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -200,4 +213,48 @@ header {
     text-transform: uppercase;
     padding-right: 20px;
     z-index: -1;
+}
+.about {
+    background-image: url("./images/tlo2.jpg");
+    background-position: center;
+    display:flex;
+    height: 50vh;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+.about .darker{
+    z-index: 0;
+}
+.about .darker p {
+    color:white;
+    margin:0 50px;
+}
+.next_line{
+    display:block;
+    margin-top: 10px;
+    color:rgb(255, 187, 0);
+    font-weight: 600;
+}
+.next_line:nth-child(2){
+    color:white;
+}
+.about i{
+    color:rgb(255, 187, 0);
+    margin-left:10px;
+}
+.about a{
+    color:rgb(255, 187, 0);
+    text-decoration: none;
+
+}
+.about a:hover{
+    color:royalblue;
+    transition: .5s;
+}
+.fa-cart-arrow-down{
+    font-size:30px;
+    border-radius: 90%;
+    padding:10px;
+
 }
